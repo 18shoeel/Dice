@@ -26,7 +26,7 @@ void draw(){
      
      it.roll();
      
-     sum = sum + it.roll;
+     sum = sum + it.theRoll;
         
     }
   }
@@ -48,33 +48,33 @@ class Die //models one single dice cube
   //variable declarations here
   int myX;
   int myY;
-  int roll;
+  int theRoll;
 
   Die(int x, int y) //constructor
   {
     //variable initializations here
     myX = x;
     myY = y;
-    roll = (int)(Math.random()*6) +1;
+    theRoll = (int)(Math.random()*6) +1;
   }
 
   void roll() //shows how many dots
   {
     fill(0);
-    if (roll == 1)
+    if (theRoll == 1)
     {
       fill(255, 255, 255);
       ellipse(myX + 40,myY+ 40,15,15);
     }
 
-    if (roll == 2)
+    if (theRoll == 2)
     {
       fill(255, 255, 255);
       ellipse(myX +20, myY + 20, 15,15);
       ellipse(myX + 60, myY +60,15,15);
     }
 
-    if (roll == 3)
+    if (theRoll == 3)
     {
       fill(255, 255, 255);
       ellipse(myX +20, myY + 20, 15,15);
@@ -82,7 +82,7 @@ class Die //models one single dice cube
       ellipse(myX + 60, myY +60,15,15);
     }
 
-    if (roll == 4)
+    if (theRoll == 4)
     {
       fill(255, 255, 255);
       ellipse(myX +20, myY + 20, 15,15);
@@ -91,7 +91,7 @@ class Die //models one single dice cube
       ellipse(myX +60, myY + 60, 15,15);
     }
 
-    if (roll == 5)
+    if (theRoll == 5)
     {
       fill(255, 255, 255);
       ellipse(myX +20, myY + 20, 15,15);
@@ -101,7 +101,7 @@ class Die //models one single dice cube
       ellipse(myX + 40,myY+ 40,15,15);
     }
 
-    if (roll == 6)
+    if (theRoll == 6)
     {
 
       fill(255, 255, 255);
