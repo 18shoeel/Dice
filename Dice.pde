@@ -2,8 +2,9 @@
 // help from Mr.Smith and 3cpo Patrick Potter
 void setup()
 {
+    size(800,800);
    noLoop();
-  size(800,800);
+ 
 
 background(1);
 }
